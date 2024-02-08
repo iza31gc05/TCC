@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-hero{
+    @apply bg-white max-w-xs text-red-900
+}

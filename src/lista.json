@@ -1,0 +1,18 @@
+{
+    "restaurantes": [
+        {
+            "nome": "Outback",
+            "endereco": "Osasco",
+            "avaliacao": "2, descrição do restaurante",
+            "acessibilidade": "3",
+            "comentarios": ""
+        },
+        {
+            "nome": "Mania de Churrasco",
+            "endereco": "São Paulo",
+            "avaliacao": "4, ....",
+            "acessibilidade": "4",
+            "comentarios": ""
+        }
+    ]
+}

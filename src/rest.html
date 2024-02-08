@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Acessibilidade360 </title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body id="body3">
+    <div id = "navybar" class="navbar bg-base-100">
+        <div class="flex-1">
+          <a href="app.html" id="acessibilidade" class="btn btn-ghost normal-case text-xl"> Acessibilidade360 </a>
+        </div>
+        <div class="flex-none">
+          <ul id="header" class="menu menu-horizontal px-1">
+            <li><a> Quem Somos </a></li>
+            <li>
+              <details>
+                <summary id = "av">
+                  Avaliações
+                </summary>
+                <ul id="link" class="p-2 bg-base-100">
+                  <li><a> Restaurantes </a></li>
+                  <li><a href="lug.html"> Pontos Turísticos  </a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <div id="restaurantes" class="text-red-600">
+        <h1> Restaurantes </h1>
+    </div>
+    <script>
+        let divRestaurantes = document.querySelector("#restaurantes")
+
+        fetch("lista.json").then((response) => {
+            response.json().then((lista) => {
+                lista.restaurantes.map((restaurantes) => {
+                    divRestaurantes.innerHTML += `<br> ${restaurantes.nome} <br> ${restaurantes.endereco} <br> ${restaurantes.avaliacao} <br> ${restaurantes.acessibilidade} <br> ${restaurantes.comentarios} </br>`
+                })
+            })
+        })
+    </script>
+</body>
+</html>
