@@ -1708,7 +1708,7 @@ body{
 .cmt{
   color: black;
   margin: 30px;
-  background-color: #f03636;
-  
-
+  background-color: #ff9292;
+  border-radius: 10px;
+  margin-bottom: 0px;
 }
