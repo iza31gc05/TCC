@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Acessibilidade360 </title>
     <link rel="stylesheet" href="style2.css">
+    <script src="service2.js"></script>
 </head>
 <body id="body3">
     <div id = "navybar" class="navbar bg-base-100">
@@ -29,19 +30,78 @@
         </div>
       </div>
 
-    <div id="restaurantes" class="text-red-600">
-        <h1> Restaurantes </h1>
-    </div>
-    <script>
-        let divRestaurantes = document.querySelector("#restaurantes")
+  <div id="titulo"  class="text-red-600">
+      <br>
+      <h1> Restaurantes </h1> <br> 
+  </div>
 
-        fetch("lista.json").then((response) => {
-            response.json().then((lista) => {
-                lista.restaurantes.map((restaurantes) => {
-                    divRestaurantes.innerHTML += `<br> ${restaurantes.nome} <br> ${restaurantes.endereco} <br> ${restaurantes.avaliacao} <br> ${restaurantes.acessibilidade} <br> ${restaurantes.comentarios} </br>`
-                })
+  <div id="ladoalado">
+      <div class="coluna">
+        <img src="foto.rest2.png" alt="descrição da imagem" style="width: 1010px;">
+      </div>
+      <div class="coluna">
+        <img src="foto.rest1.jpg" alt="descrição da imagem" style="width: 1109px;">
+      </div>
+      <div class="coluna">
+        <img src="foto.rest3.jpg" alt="descrição da imagem" style="width: 555px;">
+      </div>
+  </div>
+
+  <div id="rest1" class="barra">
+    <img src="foto.av1.png" alt="" id="fotoav">
+    <script>
+      let divRestaurantes1 = document.querySelector("#rest1")
+      fetch("lista.json").then((response) => {
+          response.json().then((lista) => {
+            lista.rest1.map((opcao) => {
+                divRestaurantes1.innerHTML += `<div id="avtit"> ${opcao.nome} </div> <div id="avend"> ${opcao.endereco} </div> <br> <div id="avh"> ${opcao.horario} </div> <div id="avtxt"> <br> ${opcao.avaliacao} <br> ${opcao.acessibilidade} <br> </div>`
             })
-        })
+         })
+      })
     </script>
+  </div>
+  <form id="comentarioForm4">
+    <input type="text" placeholder="Escreva aqui sua avaliação" id="comentario4" class="comentario">
+    <input type="submit" value="Enviar" id="enviar" class="enviar">
+  </form>
+  <div id="comentarios4"></div>
+      
+  <div id="rest2" class="barra">
+    <img src="foto.av3.png" alt="" id="fotoav">
+    <script>
+      let divRestaurantes2 = document.querySelector("#rest2")
+      fetch("lista.json").then((response) => {
+          response.json().then((lista) => {
+              lista.rest2.map((opcao) => {
+                  divRestaurantes2.innerHTML += `<div id="avtit"> ${opcao.nome} </div> <div id="avend"> ${opcao.endereco} </div> <br> <div id="avh"> ${opcao.horario} </div> <div id="avtxt"> <br> ${opcao.avaliacao} <br> ${opcao.acessibilidade} <br> </div>`
+              })
+          })
+      })
+    </script>
+  </div>
+  <form id="comentarioForm5">
+    <input type="text" placeholder="Escreva aqui sua avaliação" id="comentario5" class="comentario">
+    <input type="submit" value="Enviar" id="enviar2" class="enviar">
+  </form>
+  <div id="comentarios5"></div>
+
+  <div id="rest3" class="barra">
+    <img src="foto.av1.png" alt="" id="fotoav">
+    <script>
+      let divRestaurantes3 = document.querySelector("#rest3")
+      fetch("lista.json").then((response) => {
+         response.json().then((lista) => {
+            lista.rest3.map((opcao) => {
+                  divRestaurantes3.innerHTML += `<div id="avtit"> ${opcao.nome} </div> <div id="avend"> ${opcao.endereco} </div> <br> <div id="avh"> ${opcao.horario} </div> <div id="avtxt"> <br> ${opcao.avaliacao} <br> ${opcao.acessibilidade} <br> </div>`
+              })
+          })
+      })
+    </script>
+  </div>
+  <form id="comentarioForm6">
+    <input type="text" placeholder="Escreva aqui sua avaliação" id="comentario6" class="comentario">
+    <input type="submit" value="Enviar" id="enviar3" class="enviar">
+  </form>
+  <div id="comentarios6"></div>
 </body>
 </html>

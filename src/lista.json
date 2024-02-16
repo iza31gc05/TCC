@@ -1,18 +1,61 @@
 {
-    "restaurantes": [
+    "rest1": [
         {
-            "nome": "Outback",
-            "endereco": "Osasco",
-            "avaliacao": "2, descrição do restaurante",
-            "acessibilidade": "3",
-            "comentarios": ""
-        },
+            "nome": "CTN - Centro de Tradições Nordestinas",
+            "endereco": "R. Jacofer, 615 – Ponte Júlio de Mesquita Neto / Bairro do Limão – São Paulo/SP",
+            "horario": "O CTN funciona aos sábados, domingos e feriados das 11h às 22h. No Sabadaço (evento semanal realizado aos sábados à noite), das 22h às 3h. Durante a semana, de segunda à sexta, das 11h às 16h.",
+            "avaliacao": " - Esse lugar além de servir exelentes comidas, ele proporciona uma experiência cultural. O CTN tem como objetivo trazer práticos típicos do Nordeste feito por pessoas nordestinas, tendo como especialidade o famoso baião de dois. Assim que você chega no ambiente .Nesse espaço você pode encontrar diversas opções de restaturantes, tendo um pátio enorme aonde se concentra a grande maioria dos restaurantes e também tem um segundo andar. No terceiro andar há diversas lojas que vendem diversas variedades de itens, tendo predominantemente produtos regionais e artesanatos. Do lado de fora tem um parque de diversão para as crianças e uma capela. Normalmente, durante a noite é comum ter shows de artistas convidados.",
+            "acessibilidade": " - Agora se tratando de acessibilidade, o estacionamento é feito com várias pedrinhas o que dificulta a locomoção até chegar no local. Após isso, se você é PCD, não vai encontrar nenhuma outra dificuldade, é extremamente possuivel aproveitar o lugar, tendo banheiros acessiveis e diversas opções de atividades para fazer no primeiro andar. O único problema é que não tem como ir para os outros andares, pois só tem a opção de escada. Agora, se você possui algum tipo de deficiência visual, se você não estiver acomphando vai ser difícil aproveitar o lugar, pois não possui nenhunhum tipo de marcação no chão para se locomover do estacionamento."
+        }
+    ],
+
+    "rest2": [
         {
-            "nome": "Mania de Churrasco",
-            "endereco": "São Paulo",
-            "avaliacao": "4, ....",
-            "acessibilidade": "4",
-            "comentarios": ""
+            "nome": "Imperio da Costela",
+            "endereco": "R. Machado de Assis, 327 - Centro, Osasco - SP",
+            "horario": "De domingo à quinta-feira, das 11h30 às 16h. Já as sextas e sábados é das 11h30 às 23h. E durante os feriados o horário pode mudar",
+            "avaliacao": " - Esse lugar foi inaugurado em 1998, e é conhecido por servir costelas deliciosas, que são preparadas a bafo por várias horas o que deixa a carne mais macia. O restaurante tem uma decoração rústica e um clima agrádavel, o que a torna ótima para passar um tempo em família, e não importa o tamnho pois eles possuem mesas para comportar bastante gente",
+            "acessibilidade": " - Em ralação a acessibilidade, eles possuem uma entrada alternativa para as pessoas que tem alguma deificuldade de locomoção. E como lá só tem um andar, não vai encntrar nenhuma problema. Já se você tiver alguma deficiência visual, apesar de não ter nenhum tipo de marcação no chão para conseguir se guiar, lá no restaurantes a funcionários dispostos o tempo todo caso você precise de assistencia, entaõ dá para aproveitar o lugar sem problemas"
+        }
+    ],
+
+    "rest3": [
+        {
+            "nome": "Recanto das aves",
+            "endereco": "Rua José Arnaldo Polkorni, 194, Caieiras, São Paulo,",
+            "horario": "De quarta à sexta, das 19h às 23h, e nos finais de semanda, das 12h às 22h",
+            "avaliacao": " - Conhecido por oferecer uma experiência única em meio à natureza, com um ambiente tranquilo e agradável. O restaurante destaca-se por sua localização próxima à Mata Atlântica e por sua decoração que valoriza elementos naturais, proporcionando aos clientes uma sensação de estar em um refúgio longe da agitação da cidade.",
+            "acessibilidade": " - Quando você chega, o estacionamento é de terra o que atrapalha a locomoção até chegar no resturante. Mas lá dentro há rampas e um terraço para que as pessoas com qualquer tipo de difuldade não tenha que ficar em uma mesa na terra ou na areia. Além disso tem funcionários disponiveis o tempo todo caso você precise de ajuda."
+        }
+    ],
+
+    "lug1":[
+        {
+            "nome": "Parque Ibirapuera",
+            "endereco": "Av Pedro Álvares Cabral, s/n (portões 2, 3 e 10), Av IV Centenário – portões 6 e 7A, Av República do Líbano – portão 7, São Paulo/SP",
+            "horario": "todos os dias, das 5h às 23h",
+            "avaliacao": " - Considerado o pulmão verde de São Paulo, o Parque Ibirapuera é um grande espaço verde que oferece áreas para caminhada, corrida, piqueniques, além de abrigar importantes instituições culturais e obras de arte.",
+            "acessibilidade": " - O parque possui boa acessibilidade, com calçadas bem conservadas, banheiros adaptados e espaços amplos. No entanto, em dias muito movimentados, pode ser difícil para cadeirantes circularem livremente devido à grande quantidade de pessoas."
+        }
+    ],
+
+    "lug2":[
+        {
+            "nome": "MASP",
+            "endereco": "AV Paulista, 1578, São Paulo-Brasil",
+            "horario": "Na terça-feira, das 10h às 20h, e de quarta a domingo, das 10h às 18h",
+            "avaliacao": " - Um dos mais importantes museus de arte do Brasil, o MASP abriga uma vasta coleção de arte ocidental e possui uma arquitetura única, com sua estrutura suspensa por pilares vermelhos.",
+            "acessibilidade": " - O MASP é bem avaliado em termos de acessibilidade, com rampas de acesso, elevadores e banheiros adaptados. O museu também oferece visitas guiadas em Libras (Língua Brasileira de Sinais) e audioguias para pessoas com deficiência visual."
+        }
+    ],
+
+    "lug3":[
+        {
+            "nome": "Sesc Pompéia",
+            "endereco": "Rua Clélia, 93 - Pompeia - São Paulo/São Paulo",
+            "horario": "De terça a sexta, das 10h às 19h, e aos sábados, domingos e feriados, das 10h às 17h",
+            "avaliacao": " - Um complexo cultural que inclui teatros, piscinas, quadras esportivas, restaurantes e espaços para exposições, o Sesc Pompéia é conhecido por sua arquitetura inovadora projetada por Lina Bo Bardi.",
+            "acessibilidade": " - O Sesc Pompéia é elogiado por sua acessibilidade, oferecendo rampas de acesso, elevadores, banheiros adaptados e sinalização adequada para pessoas com deficiência. O complexo também promove regularmente eventos inclusivos e atividades acessíveis."
         }
     ]
 }

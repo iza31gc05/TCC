@@ -5,30 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Acessibilidade360 </title>
     <link rel="stylesheet" href="style3.css">
+    <script src="service.js"></script>
 </head>
 <body>
-    <div id = "navybar" class="navbar bg-base-100">
-        <div class="flex-1">
-          <a href="app.html" id="acessibilidade" class="btn btn-ghost normal-case text-xl"> Acessibilidade360 </a>
-        </div>
-        <div class="flex-none">
-          <ul id="header" class="menu menu-horizontal px-1">
-            <li><a> Quem Somos </a></li>
-            <li>
-              <details>
-                <summary id = "av">
-                  Avaliações
-                </summary>
-                <ul id="link" class="p-2 bg-base-100">
-                  <li><a href="rest.html"> Restaurantes </a></li>
-                  <li><a> Pontos Turísticos </a></li>
-                </ul>
-              </details>
-            </li>
-          </ul>
-        </div>
+  <div id = "navybar" class="navbar bg-base-100">
+      <div class="flex-1">
+        <a href="app.html" id="acessibilidade" class="btn btn-ghost normal-case text-xl"> Acessibilidade360 </a>
       </div>
+      <div class="flex-none">
+        <ul id="header" class="menu menu-horizontal px-1">
+          <li><a> Quem Somos </a></li>
+          <li>
+            <details>
+              <summary id = "av">
+                Avaliações
+              </summary>
+              <ul id="link" class="p-2 bg-base-100">
+                <li><a href="rest.html"> Restaurantes </a></li>
+                <li><a> Pontos Turísticos </a></li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-      redeuhfashfaisdhfaushdf
-</body>
+    <div id="titulo"  class="text-red-600">
+      <br>
+      <h1> Pontos Turísticos </h1> <br> 
+    </div>
+
+    <div id="ladoalado">
+      <div class="coluna">
+        <img src="foto.lug1.jpg" alt="descrição da imagem" style="width: 904px;">
+      </div>
+      <div class="coluna">
+        <img src="foto.lug3.jpg" alt="descrição da imagem" style="width: 1144px;">
+      </div>
+      <div class="coluna">
+        <img src="foto.lug2.jpg" alt="descrição da imagem" style="width: 1200px;">
+      </div>
+    </div>
+
+    <div id="lug1" class="barra">
+      <img src="foto.av1.png" alt="" id="fotoav">
+      <script>
+        let divLugares1 = document.querySelector("#lug1")
+        fetch("lista.json").then((response) => {
+            response.json().then((lista) => {
+                lista.lug1.map((opcao) => {
+                    divLugares1.innerHTML += `<div id="avtit"> ${opcao.nome} </div> <div id="avend"> ${opcao.endereco} </div> <br> <div id="avh"> ${opcao.horario} </div> <div id="avtxt"> <br> ${opcao.avaliacao} <br> ${opcao.acessibilidade} <br> </div>`
+                })
+            })
+        })
+      </script>
+    </div>
+    <form id="comentarioForm">
+      <input type="text" placeholder="Escreva aqui sua avaliação" id="comentario" class="comentario">
+      <input type="submit" value="Enviar" id="enviar" class="enviar">
+    </form>
+    <div id="comentarios"></div>
+      
+    <div id="lug2" class="barra">
+      <img src="foto.av2.png" alt="" id="fotoav">
+      <script>
+        let divLugares2 = document.querySelector("#lug2")
+        fetch("lista.json").then((response) => {
+            response.json().then((lista) => {
+                lista.lug2.map((opcao) => {
+                    divLugares2.innerHTML += `<div id="avtit"> ${opcao.nome} </div> <div id="avend"> ${opcao.endereco} </div> <br> <div id="avh"> ${opcao.horario} </div> <div id="avtxt"> <br> ${opcao.avaliacao} <br> ${opcao.acessibilidade} <br> </div>`
+                })
+            })
+        })
+      </script>
+    </div>
+    <form id="comentarioForm2">
+      <input type="text" placeholder="Escreva aqui sua avaliação" id="comentario2" class="comentario">
+      <input type="submit" value="Enviar" id="enviar2" class="enviar">
+    </form>
+    <div id="comentarios2"></div>
+
+    <div id="lug3" class="barra">
+      <img src="foto.av1.png" alt="" id="fotoav">
+      <script>
+        let divLugares3 = document.querySelector("#lug3")
+        fetch("lista.json").then((response) => {
+            response.json().then((lista) => {
+                lista.lug3.map((opcao) => {
+                    divLugares3.innerHTML += `<div id="avtit"> ${opcao.nome} </div> <div id="avend"> ${opcao.endereco} </div> <br> <div id="avh"> ${opcao.horario} </div> <div id="avtxt"> <br> ${opcao.avaliacao} <br> ${opcao.acessibilidade} <br> </div>`
+                })
+            })
+        })
+      </script>
+    </div>
+    <form id="comentarioForm3">
+      <input type="text" placeholder="Escreva aqui sua avaliação" id="comentario3" class="comentario">
+      <input type="submit" value="Enviar" id="enviar3" class="enviar">
+    </form>
+    <div id="comentarios3"></div>
 </html>

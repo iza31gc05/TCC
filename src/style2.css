@@ -1580,6 +1580,9 @@ html {
   }
 }
 
+body{
+  background-color: #fff;
+}
 #acessibilidade{
   color: #CD0000;
 }
@@ -1601,6 +1604,111 @@ html {
 #link{
   background-color: lightgray;
 }
-#body2{
-  background:white;
+
+#ladoalado{
+  display: flex; /* coloca as imagens uma ao lado da outra */
+  justify-content: center; /* alinha as imagens no centro da tela */
+  
+}
+#titulo{
+  background-color: #fff;
+  color: #b30000;
+  font-style: oblique;
+	font-weight: bolder;
+	font-size: 55px;
+	font-family: OCR A Std, monospace;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+#avtit{
+  color: #f03636;
+  font-style: oblique;
+	font-weight: bolder;
+	font-size: 25px;
+	font-family: OCR A Std, monospace;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+
+}
+
+#avend{
+  color: black;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+#avh{
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+	background: lightcoral;
+	display: inline;
+	padding: 3px 0 !important;
+	position: relative;
+
+}
+
+#avtxt{
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.barra{
+  background-color: #ffe7e7;
+  margin: 20px;
+  border-radius: 12px;
+}
+
+.comentario{
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+
+.enviar{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  background-color: #CD0000;
+  width: 70px;
+  height: 35px;
+  color: black;
+}
+
+#fotoav{
+  width: 170px;
+  height: 50px;
+  text-align: right;
+  display: flex;
+  justify-content: right;
+}
+
+.excluir{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  background-color: #00cdcd;
+  width: 170px;
+  height: 35px;
+  color: black;
+}
+
+
+.cmt{
+  color: black;
+  margin: 30px;
+  background-color: #f03636;
+  
+
 }

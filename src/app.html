@@ -48,5 +48,23 @@
     </div>
   </div>
 
+<div id="ladoalado">
+  <div id="titulo">
+    <h1> No que acreditamos </h1>
+  </div>
+  <div id="txt1">
+    <script>
+      let divTexto = document.querySelector("#txt1");
+      fetch("txt.json").then((response) => {
+        response.json().then((declacao) => {
+          declacao.txt1.map((paragrafo) => {
+            divTexto.innerHTML += ` <p> ${paragrafo.p} <br> <br>  </p> `
+          })
+        })
+      })
+    </script>
+  </div>
+</div>
+
 </body>
 </html>

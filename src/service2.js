@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const forms = [
-        { formId: '#comentarioForm', inputId: '#comentario', divId: '#comentarios', localStorageKey: 'comentarios' },
-        { formId: '#comentarioForm2', inputId: '#comentario2', divId: '#comentarios2', localStorageKey: 'comentarios2' },
-        { formId: '#comentarioForm3', inputId: '#comentario3', divId: '#comentarios3', localStorageKey: 'comentarios3' }
+        { formId: '#comentarioForm4', inputId: '#comentario4', divId: '#comentarios4', localStorageKey: 'comentarios4' },
+        { formId: '#comentarioForm5', inputId: '#comentario5', divId: '#comentarios5', localStorageKey: 'comentarios5' },
+        { formId: '#comentarioForm6', inputId: '#comentario6', divId: '#comentarios6', localStorageKey: 'comentarios6' }
     ];
 
     forms.forEach(({ formId, inputId, divId, localStorageKey }) => {
@@ -48,5 +48,4 @@ document.addEventListener('DOMContentLoaded', () => {
         comentarioParagrafo.textContent = text;
         parent.appendChild(comentarioParagrafo);
     }
-    
 });
