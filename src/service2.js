@@ -29,23 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
             comentarioInput.value = '';
         });
 
-        const botaoExcluir = document.createElement('button');
-        botaoExcluir.textContent = 'Excluir comentários';
-        botaoExcluir.classList.add('excluir');
-        comentariosDiv.appendChild(botaoExcluir);
-
-        botaoExcluir.addEventListener('click', () => {
-            comentariosSalvos.length = 0;
-            localStorage.setItem(localStorageKey, JSON.stringify(comentariosSalvos));
-            while (comentariosDiv.firstChild) {
-                comentariosDiv.removeChild(comentariosDiv.firstChild);
-            }
-        });
-    });
-
     function addComment(parent, text) {
         const comentarioParagrafo = document.createElement('p');
         comentarioParagrafo.textContent = text;
         parent.appendChild(comentarioParagrafo);
     }
-});
+})})

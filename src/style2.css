@@ -1673,7 +1673,6 @@ body{
   width: 100%;
   margin-left: 20px;
   margin-right: 20px;
-
 }
 
 .enviar{
@@ -1711,4 +1710,5 @@ body{
   background-color: #ff9292;
   border-radius: 10px;
   margin-bottom: 0px;
+  font-family: Times New Roman, serif
 }
