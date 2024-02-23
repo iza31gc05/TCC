@@ -36,3 +36,86 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
 })})
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("tourist-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        var nomePonto = document.getElementById("nome-ponto").value;
+        var endereco = document.getElementById("endereco").value;
+        var avaliacao = document.getElementById("avaliacao").value;
+        var acessibilidade2 = document.getElementById("acessibilidade2").options[document.getElementById("acessibilidade").selectedIndex].value;
+        var descricao = document.getElementById("descricao").value;
+
+        var pontoTuristicoInfo = {
+            nome: nomePonto,
+            endereco: endereco,
+            avaliacao: avaliacao,
+            acessibilidade: acessibilidade2,
+            descricao: descricao
+        };
+
+        saveTourist(pontoTuristicoInfo);
+
+        // Limpar o formulário após salvar as informações
+        document.getElementById("tourist-form").reset();
+
+        
+
+    });
+
+    loadSavedTourists();
+});
+
+function saveTourist(pontoTuristicoInfo) {
+    // Verificar se já há pontos turísticos salvos no armazenamento local
+    var savedTourists = JSON.parse(localStorage.getItem('savedTourists')) || [];
+
+    // Adicionar o novo ponto turístico à lista
+    savedTourists.push(pontoTuristicoInfo);
+
+    // Salvar a lista atualizada no armazenamento local
+    localStorage.setItem('savedTourists', JSON.stringify(savedTourists));
+
+    // Atualizar a lista de pontos turísticos na página
+    loadSavedTourists();
+}
+
+function loadSavedTourists() {
+    var savedTourists = JSON.parse(localStorage.getItem('savedTourists')) || [];
+    var listaPontosTuristicos = document.getElementById("saved-tourists");
+    listaPontosTuristicos.innerHTML = ''; // Limpar a lista antes de adicionar os itens salvos
+    savedTourists.class = "barra";
+
+    savedTourists.forEach(function(pontoTuristicoInfo, ) {
+        var listItem = document.createElement("li");
+
+        var nomeParagraph = document.createElement("p");
+        nomeParagraph.textContent = `${pontoTuristicoInfo.nome}`;
+        nomeParagraph.id = "avtit2";
+        listItem.appendChild(nomeParagraph);
+
+        var enderecoParagraph = document.createElement("p");
+        enderecoParagraph.textContent = `${pontoTuristicoInfo.endereco}`;
+        enderecoParagraph.id = "avend";
+        listItem.appendChild(enderecoParagraph);
+
+        var avaliacaoParagraph = document.createElement("p");
+        avaliacaoParagraph.textContent = `Avaliação: ${pontoTuristicoInfo.avaliacao}`;
+        avaliacaoParagraph.id = "avend";
+        listItem.appendChild(avaliacaoParagraph);
+
+        var acessibilidadeParagraph = document.createElement("p");
+        acessibilidadeParagraph.textContent = `${pontoTuristicoInfo.acessibilidade}`;
+        acessibilidadeParagraph.id = "avh";
+        listItem.appendChild(acessibilidadeParagraph);
+
+        var descricaoParagraph = document.createElement("p");
+        descricaoParagraph.textContent = ` - ${pontoTuristicoInfo.descricao}`;
+        descricaoParagraph.id = "avtxt";
+        listItem.appendChild(descricaoParagraph);
+
+        listaPontosTuristicos.appendChild(listItem);
+
+    });
+}

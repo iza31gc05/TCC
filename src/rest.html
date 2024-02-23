@@ -102,5 +102,37 @@
     <input type="submit" value="Enviar" id="enviar3" class="enviar">
   </form>
   <div id="comentarios6" class="cmt"></div>
+
+  <div id="restaurant-info">
+    <h2 id="infotit">Informações do Restaurante</h2>
+    <form id="restaurant-form">
+        <label class="infotxt" for="nome-restaurante">Nome do Restaurante:</label><br>
+        <input type="text" id="nome-restaurante" name="nome-restaurante" required><br><br>
+        
+        <label class="infotxt" for="endereco">Endereço:</label><br>
+        <input type="text" id="endereco" name="endereco" required><br><br>
+        
+        <label class="infotxt" for="avaliacao">Avaliação:</label><br>
+        <input type="number" id="avaliacao" name="avaliacao" min="0" max="5" step="0.1" required><br><br>
+        
+        <label class="infotxt" name="acessibilidade2">Acessibilidade:</label><br>
+        <select id="acessibilidade2" name="acessibilidade2" required>
+            <option value="">Selecione...</option>
+            <option value="Acessível">Acessível</option>
+            <option value="Parcialmente-acessível"> Parcialmente Acessível</option>
+            <option value="Inacessível">Inacessível</option>
+        </select><br><br>
+
+        <label class="infotxt" for="descricao">Descrição:</label><br>
+        <textarea id="descricao" name="descricao" rows="4" cols="140"></textarea><br><br>
+        
+        <button type="submit" class="salvar">Salvar Informações</button>
+    </form>
+</div>
+
+<div id="restaurant-list">
+    <ul id="saved-restaurants"></ul>
+</div>
+
 </body>
 </html>

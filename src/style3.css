@@ -1671,7 +1671,7 @@ body{
   background-color: white;
   border: 1px solid #ddd;
   padding: 10px;
-  width: 100%;
+  width: 80%;
   margin-left: 20px;
   margin-right: 20px;
 
@@ -1695,15 +1695,6 @@ body{
   justify-content: right;
 }
 
-.excluir{
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 30px;
-  background-color: #00cdcd;
-  width: 170px;
-  height: 35px;
-  color: black;
-}
 
 
 .cmt{
@@ -1714,4 +1705,89 @@ body{
   margin-bottom: 0px;
   font-family: Times New Roman, serif;
   font-size: 17px
+}
+
+#avtit2{
+  color: #f03636;
+  font-style: oblique;
+	font-weight: bolder;
+	font-size: 25px;
+	font-family: OCR A Std, monospace;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+
+.salvar{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  background-color: #CD0000;
+  width: 150px;
+  height: 35px;
+  color: black;
+}
+
+#tourist-info{
+  background-color: lightcyan;
+  margin: 20px;
+  border-radius: 12px;
+}
+
+#descricao{
+  background-color: #ddd;
+  margin-left: 10px;
+  color: black;
+}
+
+.infotxt{
+  color: black;
+  margin-left: 10px;
+  font-weight: bolder;
+	font-size: 18px;
+	font-family: OCR A Std, monospace;
+}
+
+#endereco{
+  margin-left: 10px;
+  background-color: #ddd;
+  width: 1050px;
+  color: black;
+}
+
+#nome-restaurante{
+  margin-left: 10px;
+  background-color: #ddd;
+  width: 1050px;
+  color: black;
+}
+
+#avaliacao{
+  margin-left: 10px;
+  background-color: #ddd;
+  width: 1050px;
+  color: black;
+}
+
+#acessibilidade2{
+  margin-left: 10px;
+  background-color: #ddd;
+  width: 1050px;
+  color: black;
+  font-weight: bold
+}
+
+#infotit{
+  color: darkblue;
+  font-style: oblique;
+	font-weight: bolder;
+	font-size: 25px;
+	font-family: OCR A Std, monospace;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }

@@ -35,3 +35,77 @@ document.addEventListener('DOMContentLoaded', () => {
         parent.appendChild(comentarioParagrafo);
     }
 })})
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("restaurant-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+      
+        var nomeRestaurante = document.getElementById("nome-restaurante").value;
+        var endereco = document.getElementById("endereco").value;
+        var avaliacao = document.getElementById("avaliacao").value;
+        var acessibilidade2 = document.getElementById("acessibilidade2").value;
+        var descricao = document.getElementById("descricao").value;
+      
+        var restauranteInfo = {
+          nome: nomeRestaurante,
+          endereco: endereco,
+          avaliacao: avaliacao,
+          acessibilidade: acessibilidade2,
+          descricao: descricao
+        }
+      
+        saveRestaurant(restauranteInfo);
+      
+        // Limpar o formulário após salvar as informações
+        document.getElementById("restaurant-form").reset();
+      });
+
+    loadSavedRestaurants();
+});
+
+function saveRestaurant(restauranteInfo) {
+    var savedRestaurants = JSON.parse(localStorage.getItem('savedRestaurants')) || [];
+
+    savedRestaurants.push(restauranteInfo);
+
+    localStorage.setItem('savedRestaurants', JSON.stringify(savedRestaurants));
+
+    loadSavedRestaurants();
+}
+
+function loadSavedRestaurants() {
+    var savedRestaurants = JSON.parse(localStorage.getItem('savedRestaurants')) || [];
+    var listaRestaurantes = document.getElementById("saved-restaurants");
+    listaRestaurantes.innerHTML = '';
+
+    savedRestaurants.forEach(function(restauranteInfo) {
+        var listItem = document.createElement("li");
+
+        var nomeParagraph = document.createElement("p");
+        nomeParagraph.textContent = `${restauranteInfo.nome}`;
+        nomeParagraph.id = "avtit2";
+        listItem.appendChild(nomeParagraph);
+
+        var enderecoParagraph = document.createElement("p");
+        enderecoParagraph.textContent = `${restauranteInfo.endereco}`;
+        enderecoParagraph.id = "avend";
+        listItem.appendChild(enderecoParagraph);
+
+        var avaliacaoParagraph = document.createElement("p");
+        avaliacaoParagraph.textContent = `Avaliação: ${restauranteInfo.avaliacao}`;
+        avaliacaoParagraph.id = "avend";
+        listItem.appendChild(avaliacaoParagraph);
+
+        var acessibilidadeParagraph = document.createElement("p");
+        acessibilidadeParagraph.textContent = `${restauranteInfo.acessibilidade}`;
+        acessibilidadeParagraph.id = "avh";
+        listItem.appendChild(acessibilidadeParagraph);
+
+        var descricaoParagraph = document.createElement("p");
+        descricaoParagraph.textContent = ` - ${restauranteInfo.descricao}`;
+        descricaoParagraph.id = "avtxt";
+        listItem.appendChild(descricaoParagraph);
+        
+        listaRestaurantes.appendChild(listItem);
+    });
+}
