@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var nomePonto = document.getElementById("nome-ponto").value;
         var endereco = document.getElementById("endereco").value;
         var avaliacao = document.getElementById("avaliacao").value;
-        var acessibilidade2 = document.getElementById("acessibilidade2").options[document.getElementById("acessibilidade").selectedIndex].value;
+        var acessibilidade2 = document.getElementById("acessibilidade2").value;
         var descricao = document.getElementById("descricao").value;
 
         var pontoTuristicoInfo = {
